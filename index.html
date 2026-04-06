@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- The head section includes: a title that will show up in the website tab, a dictation of universal characters and symbols in meta,
+            the meta name allowing for device useability, and a link for all related style sheets -->
+        <title>Recipe Finder</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css">
+      </head>
+      <!-- The Body section includes: a div for the actual recipe finding loctions, a div for matching the ingredients and recipes,
+            and the bottom script allowing for the app to link. Both divs include a input from user and a button for submission -->
+      <body>
+        <div class="container">
+          <h1>Farm to Fork: Recipe Finder</h1>
+          <form id="ingredient-form">
+            <input type="text" id="ingredient-input" placeholder="Enter an ingredient" required>
+            <button type="submit">Add Ingredient</button>
+          </form>
+          <div id="ingredient-list"></div>
+          <h2>Matching Recipes</h2>
+          <div id="recipe-results"></div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

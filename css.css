@@ -1,0 +1,114 @@
+/* Body styles: sets the background image and centers content on the page */
+body {
+    background: url('./ingredients_background.jpg') no-repeat center center fixed; /* Background image from local file */
+    background-size: cover;  /* Ensures the background image covers the entire page */
+    margin: 0;  /* Removes default page margin */
+    padding: 0;  /* Removes default padding */
+    display: flex;  /* Uses flexbox to align content */
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;  /* Centers content vertically */
+    min-height: 100vh;  /* Ensures the body takes up at least 100% of the viewport height */
+  }
+  
+  /* Container styling for the main content */
+  .container {
+    background: rgba(255, 255, 255, 0.8);  /* Semi-transparent white background */
+    padding: 2rem;  /* Adds space inside the container */
+    border-radius: 8px;  /* Rounds the corners of the container */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);  /* Adds shadow for depth */
+    max-width: 900px;  /* Limits the container width to 900px */
+    width: 100%;  /* Makes the container take up 100% of available width */
+  }
+  
+  /* Title styling */
+  h1 {
+    text-align: center;  /* Centers the title */
+    color: #333;  /* Dark color for the title */
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;  /* Uses flexbox to align form elements */
+    gap: 0.5rem;  /* Adds space between form elements */
+    margin-bottom: 1rem;  /* Adds space below the form */
+    justify-content: center;  /* Centers the form elements */
+  }
+  
+  /* Ingredient list styling */
+  #ingredient-list {
+    margin-bottom: 1.5rem;  /* Adds space below the ingredient list */
+    display: flex;  /* Uses flexbox to align ingredients horizontally */
+    justify-content: center;  /* Centers the ingredient list */
+    gap: 1rem;  /* Adds space between ingredient tags */
+  }
+  
+  /* Styling for each individual ingredient tag */
+  .ingredient-tag {
+    background: #4CAF50;  /* Green background for tags */
+    color: white;  /* White text color */
+    padding: 0.3rem 0.6rem;  /* Padding inside tags */
+    border-radius: 4px;  /* Rounded corners for tags */
+  }
+  
+  /* Recipe results grid layout */
+  #recipe-results {
+    display: grid;  /* Uses grid layout to arrange recipe cards */
+    grid-template-columns: repeat(2, 1fr);  /* Creates a 2-column grid */
+    gap: 1.5rem;  /* Adds space between recipe cards */
+    margin-top: 1rem;  /* Adds space above the grid */
+  }
+  
+  /* Styling for each individual recipe card */
+  .recipe {
+    background: white;  /* White background for recipe cards */
+    border-radius: 8px;  /* Rounded corners for recipe cards */
+    overflow: hidden;  /* Hides overflow content (e.g. if image is too large) */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Light shadow for depth */
+    text-align: center;  /* Centers the text inside the card */
+  }
+  
+  /* Recipe image styling */
+  .recipe img {
+    width: 100%;  /* Ensures image takes up full width of the card */
+    height: 200px;  /* Sets a fixed height for the image */
+    object-fit: cover;  /* Ensures the image covers the space without distortion */
+  }
+  
+  /* Recipe title styling */
+  .recipe h3 {
+    margin: 1rem 0 0.5rem;  /* Adds space above and below the title */
+    color: #333;  /* Dark color for the title */
+  }
+  
+  /* Recipe paragraph styling */
+  .recipe p {
+    padding: 0 1rem;  /* Adds padding inside the paragraph */
+    color: #555;  /* Lighter color for paragraph text */
+  }
+  
+  /* Link styling for the recipe button */
+  .recipe a {
+    display: inline-block;  /* Makes the link behave like a button */
+    margin: 1rem 0;  /* Adds space around the link */
+    padding: 0.5rem 1rem;  /* Adds padding inside the link */
+    background: #4CAF50;  /* Green background for the link */
+    color: white;  /* White text color */
+    text-decoration: none;  /* Removes underline from the link */
+    border-radius: 4px;  /* Rounded corners for the link */
+  }
+  
+  /* Hover effect for the recipe link */
+  .recipe a:hover {
+    background: #45a049;  /* Darkens the background on hover */
+  }
+  
+  /* Creates a red "x" for a remove button */
+  .remove-btn {
+    margin-left: 5px;
+    background: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
